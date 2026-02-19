@@ -153,24 +153,20 @@ on pc.model = p.model
 where p.maker = 'A'; 
 
 -- 12
-
--- 13
-
--- 14
 select distinct type,l.model,l.speed 
 from laptop l join product 
 where type = 'Laptop' and l.speed < (select min(speed) from pc);
 
--- 15
+-- 13
 select distinct maker,price 
 from product,printer
 where printer.color = 'Y' 
 order by price asc;
 
--- 16
+-- 14
 select maker, count (pc.model) 
 as number_models
 from pc;
 
--- 17.
+-- 15
 SELECT avg (laptop.price) and avg (pc.price) from pc join laptop where maker = 'A';
