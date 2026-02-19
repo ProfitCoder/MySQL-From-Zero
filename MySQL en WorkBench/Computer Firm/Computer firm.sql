@@ -172,26 +172,5 @@ select maker, count (pc.model)
 as number_models
 from pc;
 
--- 17
-select maker from ;
-
-
-
--- 18
-
-
-
-
--- 19
-
-
-
-
-
--- 20
-select avg (laptop.price) and avg (pc.price) from pc join laptop where maker = 'A';
-
-
-
-
--- 21
+-- 17.
+SELECT avg (laptop.price) and avg (pc.price) from pc join laptop where maker = 'A';
