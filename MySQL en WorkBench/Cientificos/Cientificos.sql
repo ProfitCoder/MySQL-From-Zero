@@ -215,11 +215,6 @@ from proyecto
 where horas = (select MIN(horas) from proyecto limit 1) and (select distinct codigo from proyecto where Codigo is not null)
 ;
 
--- 20. Científicos que trabajan excusivamente en proyectos con horas superiores a la media.
-
-SELECT
-;
-
 -- Ejemplos de clase
 
 SELECT p.codigo,p.nombre 
